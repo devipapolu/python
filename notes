@@ -1,0 +1,30 @@
+📘 Introduction of Python
+Python is a high-level programming language used to perform tasks by giving instructions to the computer.
+Python is easy to learn and simple to use, especially for beginners.
+One of the main advantages of Python is that we do not need to declare data types explicitly.
+Python automatically identifies the data type based on the value assigned.
+Python was developed by Guido van Rossum.
+Python is an independent programming language, which means we do not need to learn any other language before learning Python.
+
+Python is widely used in many fields such as:
+Web Development
+Artificial Intelligence (AI)
+Machine Learning (ML)
+Data Science
+Automation
+Python can also integrate easily with other programming languages, tools, and technologies, which makes it very powerful and popular.
+
+💻 IDE (Integrated Development Environment)
+An IDE (Integrated Development Environment) is a software tool used to write, run, and debug programs easily.
+Python development, Visual Studio Code (VS Code) is one of the most commonly used IDEs.
+VS Code itself is a lightweight tool, but it becomes powerful by installing extensions.
+
+VS Code Extensions for Python
+Python Extension
+Used to write, execute, and debug Python programs
+Provides features like syntax highlighting and error checking
+
+Extension
+Used to work with Jupyter Notebooks
+Helpful for data analysis, visualization, and experimentation
+By using these extensions, VS Code becomes a complete environment for Python application development.
