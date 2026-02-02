@@ -44,3 +44,83 @@ To store data
 To reuse values
 To make programs easy to read and understand
 To avoid repeating the same value again and again
+
+🧾 Types of Variables in Python
+Python lo variables scope & location prakaram classify chestaru.
+
+1. Local Variable
+Where Defined: Inside a function/method of a class
+Scope: Only inside that function
+Usage: Temporary data for the function
+
+Example:
+class Student:
+    def show(self):
+        x = 10   # local variable
+        print(x)
+
+student1 = Student()
+student1.show()  # Output: 10
+# print(x) → Error
+
+2. Global Variable
+Where Defined: Outside all classes and functions
+Scope: Can be used anywhere in the program
+Example:
+x = 20  # global variable
+
+class Student:
+    def show(self):
+        print(x)  # can use global variable
+
+student1 = Student()
+student1.show()  # Output: 20
+
+3. Instance Variable
+Where Defined: Inside class using self
+Scope: Unique for each object
+Usage: Object-specific data
+Example:
+
+class Student:
+    def __init__(self, name, age):
+        self.name = name  # instance variable
+        self.age = age    # instance variable
+
+student1 = Student("Devi", 22)
+student2 = Student("Ravi", 25)
+
+print(student1.name)  # Devi
+print(student2.name)  # Ravi
+
+4. Class Variable
+Where Defined: Inside class but outside all functions
+Scope: Shared by all objects of the class
+Usage: Common data for all objects
+
+Example:
+
+class Student:
+    college = "ABC College"  # class variable
+
+    def __init__(self, name):
+        self.name = name     # instance variable
+
+student1 = Student("Devi")
+student2 = Student("Ravi")
+
+print(student1.college)  # ABC College
+print(student2.college)  # ABC College
+
+Quick Notebook Table
+Variable Type                        	Defined                                 Where	Scope/Usage
+Local Variable	                Inside class function/method	               Only inside that function
+Global Variable	                Outside all classes & functions             	Anywhere in program
+Instance Variable            	  Inside class                                  using self	Unique for each object
+Class Variable	                Inside class, outside functions             	Shared by all objects of class
+
+💡 Shortcut for memory
+Local → function only
+Global → anywhere
+Instance → per object
+Class → shared by all objects ✅
