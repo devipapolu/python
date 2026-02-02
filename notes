@@ -192,3 +192,168 @@ Use meaningful names
 Use lowercase letters with underscores for readability
 total_marks = 100
 student_name = "Devi"
+
+🧾 Python Data Structures
+Add → append / add
+Delete → pop / del / remove
+Update → change using index or key ✅
+
+1. List
+Ordered collection → items keep the same order you add them
+Mutable → you can change, add, or remove items
+allow dublicates
+
+Example:
+# Creating a list
+fruits = ["apple", "banana", "mango"]
+
+# Accessing items
+print(fruits[0])  # Output: apple
+
+# Adding items
+fruits.append("orange")
+print(fruits)     # Output: ['apple', 'banana', 'mango', 'orange']
+
+# Changing items
+fruits[1] = "grapes"
+print(fruits)     # Output: ['apple', 'grapes', 'mango', 'orange']
+
+Remove in List  
+Python lists lo items remove cheyadaniki main methods:
+remove(value) → specified value remove chestundi
+pop(index) → specified index item remove chestundi (default last item)
+del → index or full list delete cheyadaniki
+
+Example:
+fruits = ["apple", "banana", "mango", "orange"]
+
+# Remove by value
+fruits.remove("banana")
+print(fruits)  # Output: ['apple', 'mango', 'orange']
+
+# Remove by index
+fruits.pop(1)
+print(fruits)  # Output: ['apple', 'orange']
+
+# Delete item using del
+del fruits[0]
+print(fruits)  # Output: ['orange']
+
+# Delete full list
+# del fruits
+# print(fruits)  # ❌ Error, list deleted(value) → specified value remove chestundi
+pop(index) → specified index item remove chestundi (default last item)
+del → index or full list delete cheyadaniki
+
+Example:
+fruits = ["apple", "banana", "mango", "orange"]
+
+# Remove by value
+fruits.remove("banana")
+print(fruits)  # Output: ['apple', 'mango', 'orange']
+
+# Remove by index
+fruits.pop(1)
+print(fruits)  # Output: ['apple', 'orange']
+
+# Delete item using del
+del fruits[0]
+print(fruits)  # Output: ['orange']
+
+# Delete full list
+# del fruits
+# print(fruits)  # ❌ Error, list deleted
+
+1️⃣ Creating a List Manually
+We can create a list by directly writing values inside square brackets [ ].
+Example:
+l = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+print(l)
+
+Output:
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+👉 This method is used when we already know the values.
+
+2️⃣ Creating a List Using list() Function
+We can also create a list using the built-in list() function.
+Example:
+l = "data structure"
+print(list(l))
+Output:
+['d', 'a', 't', 'a', ' ', 's', 't', 'r', 'u', 'c', 't', 'u', 'r', 'e']
+👉 Here, the list() function converts each character of the string into a list element.
+
+2. Tuple
+Ordered collection → items keep order
+Immutable → you cannot change the items after creation
+
+Example:
+# Creating a tuple
+numbers = (1, 2, 3, 4)
+
+# Accessing items
+print(numbers[2])  # Output: 3
+
+# Tuples are immutable
+# numbers[1] = 10  # ❌ This will give an error
+
+3. Set
+Unordered collection → items have no specific order
+Unique elements only → duplicates are not allowed
+Example:
+# Creating a set
+colors = {"red", "green", "blue", "red"}  # 'red' duplicate
+
+print(colors)  # Output: {'blue', 'red', 'green'} → duplicates removed
+
+# Adding items
+colors.add("yellow")
+print(colors)  # Output: {'blue', 'red', 'green', 'yellow'}
+
+Remove in Set
+Sets lo .remove() or .discard() use cheyachu
+Difference: remove() → error if item not present, discard() → no error
+Example:
+colors = {"red", "green", "blue"}
+
+# Remove using remove()
+colors.remove("green")
+print(colors)  # Output: {'red', 'blue'}
+
+# Remove using discard() (safe)
+colors.discard("yellow")  # No error even if 'yellow' not present
+print(colors)  # Output: {'red', 'blue'}
+
+4. Dictionary
+Key-value pairs → each value is accessed by a key
+Unordered → no fixed order for items
+Example:
+
+# Creating a dictionary
+student = {"name": "Devi", "age": 22, "course": "Python"}
+
+# Accessing value using key
+print(student["name"])  # Output: Devi
+
+# Adding new key-value pair
+student["college"] = "ABC College"
+print(student)
+
+# Changing value
+student["age"] = 23
+print(student)
+
+Remove in Dictionary
+Dictionary lo key-value pair remove cheyali ante del or .pop() use chestaru
+Example:
+student = {"name": "Devi", "age": 22, "course": "Python"}
+
+# Remove using del
+del student["course"]
+print(student)  # Output: {'name': 'Devi', 'age': 22}
+
+# Remove using pop()
+student.pop("age")
+print(student)  # Output: {'name': 'Devi'}
+
+ 
