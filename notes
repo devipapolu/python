@@ -299,7 +299,8 @@ print(numbers[2])  # Output: 3
 
 3. Set
 Unordered collection → items have no specific order
-Unique elements only → duplicates are not allowed
+Unique elements only → duplicates are not allowed.
+in set we can add and remove but we cannot modify the existing data /update the data
 Example:
 # Creating a set
 colors = {"red", "green", "blue", "red"}  # 'red' duplicate
@@ -327,6 +328,9 @@ print(colors)  # Output: {'red', 'blue'}
 4. Dictionary
 Key-value pairs → each value is accessed by a key
 Unordered → no fixed order for items
+keys are immutable only values are mutable.
+keys are used to call values.
+keys doesn't allow dupilicate.
 Example:
 
 # Creating a dictionary
@@ -355,5 +359,7 @@ print(student)  # Output: {'name': 'Devi', 'age': 22}
 # Remove using pop()
 student.pop("age")
 print(student)  # Output: {'name': 'Devi'}
+
+
 
  
