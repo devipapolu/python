@@ -657,6 +657,164 @@ Functions reduce code duplication
 Loops reduce manual repetition
 Real applications lo rendu kalisi use chestam
 
+🟦 PYTHON ERRORS & EXCEPTIONS – COMPLETE NOTES
+1️⃣ What is an Error in Python?
+An error is a problem in the code that prevents the program from running correctly.
+Python errors are mainly two types:
+Syntax Error
+Exception (Runtime Error)
+
+🔹 1. Syntax Error
+👉 Definition:
+A syntax error occurs when Python grammar rules are violated.
+👉 Key Points:
+Program start kuda avvadu
+Before execution detect avvundi
+
+🔹 Example:
+if 5 > 2
+    print("Hello")
+
+Output:
+SyntaxError: invalid syntax
+
+✅ Can we handle Syntax Error?
+❌ No
+First code correct cheyyali
+Only correct code run avutundi
+
+🔹 2. Exception (Runtime Error)
+👉 Definition:
+An exception occurs during program execution when some runtime problem arises.
+👉 Key Points:
+Program start avutundi
+Execution madhya lo error vastundi
+Can be handled using try-except
+
+🔹 Example 1: ZeroDivisionError
+print(10 / 0)
+Output:
+ZeroDivisionError: division by zero
+
+🔹 Example 2: NameError
+print(a)
+Output:
+NameError: name 'a' is not defined
+
+🔹 Example 3: ValueError
+int("abc")
+Output:
+ValueError: invalid literal for int() with base 10
+
+2️⃣ Exception Handling in Python
+🔹 Why do we use it?
+Program crash avvakunda undadaniki
+User-friendly error messages ivvadaniki
+Real-world applications lo must
+
+🔵 TRY – EXCEPT
+🔹 Syntax:
+try:
+    # risky code
+except:
+    # code to handle error
+
+🔹 Example:
+try:
+    print(10 / 0)
+except:
+    print("Cannot divide by zero")
+Output:
+Cannot divide by zero
+
+🔵 Multiple EXCEPT
+🔹 Syntax:
+try:
+    # risky code
+except ValueError:
+    print("Value Error occurred")
+except ZeroDivisionError:
+    print("Cannot divide by zero")
+
+🔵 ELSE Block
+🔹 Definition:
+else block executes only if no exception occurs
+🔹 Example:
+try:
+    print(10 / 2)
+except:
+    print("Error occurred")
+else:
+    print("No error")
+
+Output:
+5.0
+No error
+
+🔵 FINALLY Block
+🔹 Definition:
+finally block always executes — error vachina lekapoina
+
+🔹 Example:
+try:
+    print(10 / 0)
+except:
+    print("Error occurred")
+finally:
+    print("Program completed")
+Output:
+Error occurred
+Program completed
+
+🔵 Full Structure (Important)
+try:
+    # risky code
+except:
+    # handle error
+else:
+    # execute if no error
+finally:
+    # always execute
+
+🔵 Common Built-in Exceptions
+Exception                   	Reason
+ZeroDivisionError        	Divide by zero
+NameError	               Variable not defined
+ValueError	               Wrong value conversion
+TypeError            	   Invalid data type
+IndexError	               Index out of range
+KeyError	              Key not found
+
+🔹 Example: Real-life Exception Handling
+def divide(a, b):
+    try:
+        return a / b
+    except ZeroDivisionError:
+        return "Cannot divide by zero"
+
+print(divide(10, 2))  # Output: 5.0
+print(divide(10, 0))  # Output: Cannot divide by zero
+
+🔵 Syntax Error vs Exception
+Syntax Error	                       Exception
+Grammar mistake	                   Runtime problem
+Program start kuda avvadu	       Program start avutundi
+Occurs before execution        	  Occurs during execution
+Cannot handle	                  Can handle using try-except
+
+🧠 Easy Notebook Memory Lines
+Syntax error = code mistake
+Exception = runtime problem
+Function call: define only chesthe output raadu, call chesey appudu execute avuthundi
+
+📘 Final Notes Summary
+Syntax errors – fix cheyyali, cannot handle
+Exceptions – runtime lo vachina error, try-except use chesi handle cheyyachu
+Try block → risky code
+Except block → error handling
+Else block → no error, execute
+Finally block → always execute
+
 
 
  
