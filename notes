@@ -28,3 +28,19 @@ Extension
 Used to work with Jupyter Notebooks
 Helpful for data analysis, visualization, and experimentation
 By using these extensions, VS Code becomes a complete environment for Python application development.
+
+🧾 Variables in Python
+A variable is used to store data (values) in a program.
+Computers cannot remember a value for a long time unless it is stored.
+So, we use variables to store values and reuse them whenever needed.
+When we assign a value to a variable once, we can retrieve (reuse) the same value multiple times in the program without typing it again.
+Example
+x = 10
+Here, x is a variable that stores the value 10.
+We can use x anywhere in the program to get the same value.
+
+Why we use variables
+To store data
+To reuse values
+To make programs easy to read and understand
+To avoid repeating the same value again and again
