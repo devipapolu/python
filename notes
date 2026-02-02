@@ -124,3 +124,35 @@ Local → function only
 Global → anywhere
 Instance → per object
 Class → shared by all objects ✅
+
+🔹 Python Built-in (Default) Functions
+Definition: Functions which are already available in Python and can be used directly without defining them.
+Purpose: Perform common tasks quickly without writing extra code.
+Example: type(), len(), print(), input(), int(), str(), sum() etc.
+
+1. type() Function
+Purpose: Returns the data type of a variable or value.
+Syntax:
+type(object)
+
+Example:
+
+x = 10
+y = "Devi"
+
+print(type(x))  # Output: <class 'int'>
+print(type(y))  # Output: <class 'str'>
+
+Other Common Built-in Functions
+Function	           Purpose	                       Example
+len()	       Returns length of object	             len("Hello") → 5
+print()	       Displays output on screen	         print("Hi")
+input()	       Takes input from user	          name = input("Enter: ")
+int()	       Converts value to integer	      int("10") → 10
+str()	       Converts value to string	          str(10) → "10"
+sum()	      Returns sum of iterable elements	  sum([1,2,3]) → 6
+
+Notebook Shortcut
+Built-in functions → Already available in Python
+No need to define, can use directly
+Examples: type(), len(), print(), input(), int(), str(), sum()
