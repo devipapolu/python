@@ -546,6 +546,117 @@ While → dynamic condition
 For loop: Used when number of iterations is known
 While loop: Used when number of iterations is unknown
 
+🟦 PYTHON FUNCTIONS – NOTES
+🔹 What is a Function?
+A function is a block of code that is used to perform a specific task.
+👉 Same code ni multiple times use cheyyali anukunapudu function use chestam.
+
+🔹 Why do we use Functions?
+Code reuse cheyyadaniki
+Repeated code avoid cheyyadaniki
+Program clean & readable ga undadaniki
+Easy maintenance kosam
+
+🔹 Function Syntax
+def function_name():
+    statements
+
+
+def → function keyword
+function_name → user defined name
+() → parameters
+: → function body start
+
+🔹 Example 1: Simple Function
+def greet():
+    print("Hello Python")
+
+greet()
+
+
+👉 Function define chesaka call cheyyali, appude output vastundi.
+
+🔹 Function with Parameters
+def greet(name):
+    print("Hello", name)
+
+greet("Devi")
+
+
+👉 Parameter → function lopala variable
+👉 Argument → function call lo pass chesina value
+
+🔹 Function with Return
+def add(a, b):
+    return a + b
+
+print(add(10, 20))
+
+
+👉 return value ni function bayataki pampistundi.
+
+🔹 Important Point
+Function define chestey output raadu
+Function call chestey matrame execute avutundi
+Output kosam print or return undali
+
+🧠 One-Line Definition
+A function is a reusable block of code used to perform a specific task.
+
+🟦 FUNCTION vs LOOP – DIFFERENCE NOTES
+🔹 What is a Loop?
+A loop is used to repeat execution of code multiple times automatically.
+🔥 Main Difference Explanation
+
+👉 Function → reuse kosam
+👉 Loop → repetition kosam
+
+Rendu similar laga anipinchina, purpose different.
+
+🔹 Example (Same Task)
+Using Function
+def welcome():
+    print("Welcome")
+
+welcome()
+welcome()
+welcome()
+
+
+👉 Manual ga function ni call chestam.
+Using Loop
+for i in range(3):
+    print("Welcome")
+
+
+👉 Automatic ga 3 times run avutundi.
+
+🔥 Difference Table (Exam Ready)
+FUNCTION	                                  LOOP
+Code reuse kosam	                        Repetition kosam
+Manual call required	                    Automatic execution
+Multiple places lo use                  	Same place lo repeat
+Task based	                                Iteration based
+
+🔹 Function + Loop Together (Real Programs)
+def greet():
+    print("Hello")
+
+for i in range(5):
+    greet()
+
+👉 Loop → enni sarlu run cheyyalo
+👉 Function → em task cheyyalo
+
+🧠 Easy Remember Lines
+Function = reuse logic
+Loop = repeat execution
+
+📘 Final Summary ✍️
+Functions reduce code duplication
+Loops reduce manual repetition
+Real applications lo rendu kalisi use chestam
+
 
 
  
