@@ -360,6 +360,192 @@ print(student)  # Output: {'name': 'Devi', 'age': 22}
 student.pop("age")
 print(student)  # Output: {'name': 'Devi'}
 
+🟦 PYTHON CONDITIONAL STATEMENTS (IF – ELSE)
+🔹 What is if–else?
+if-else is used to check a condition and execute code based on the result.
+If condition is True → if block executes
+If condition is False → else block executes
+
+🔹 1. IF – ELSE
+Definition:
+if-else is used when there is only one condition to check.
+
+Syntax:
+if condition:
+    statement
+else:
+    statement
+
+Example:
+age = 18
+
+if age >= 18:
+    print("Eligible to vote")
+else:
+    print("Not eligible")
+
+🔹 2. IF – ELIF – ELSE
+Definition:
+if-elif-else is used when multiple decisions / conditions are required.
+
+Working:
+First if condition is checked
+If false → elif conditions are checked one by one
+If all conditions are false → else block executes
+
+Syntax:
+if condition1:
+    statement
+elif condition2:
+    statement
+elif condition3:
+    statement
+else:
+    statement
+
+Example:
+marks = 65
+
+if marks >= 90:
+    print("Grade A")
+elif marks >= 70:
+    print("Grade B")
+elif marks >= 35:
+    print("Pass")
+else:
+    print("Fail")
+
+🔹 3. NESTED IF
+Definition:
+Nested if means if statement inside another if statement.
+When to use:
+When a condition depends on another condition.
+
+Syntax:
+if condition1:
+    if condition2:
+        statement
+    else:
+        statement
+else:
+    statement
+
+Example:
+age = 20
+id_card = True
+
+if age >= 18:
+    if id_card == True:
+        print("Allowed to vote")
+    else:
+        print("ID card required")
+else:
+    print("Not eligible")
+
+🔹 Comparison Operators
+Operator	                Meaning
+==	                        Equal
+!=	                        Not equal
+>	                        Greater than
+<	                        Less than
+>=	                        Greater than or equal
+<=	                        Less than or equal
+
+🔹 Logical Operators
+Operator	                    Use
+and	                      Both conditions must be true
+or	                      Any one condition true
+not	                      Reverse the condition
+ 
+🔹 Important Rules
+✔ Colon : is mandatory
+✔ Indentation (spaces) is very important
+✔ else does not have a condition
+✔ Python checks conditions top to bottom
+
+🧠 Short Summary
+if–else → single condition
+if–elif–else → multiple conditions
+nested if → condition inside condition
+
+🟦 PYTHON LOOPS – FOR LOOP & WHILE LOOP
+🔹 What is a Loop?
+A loop is used to execute a block of code multiple times.
+
+🔵 FOR LOOP
+👉 Definition:
+for loop is used to iterate over a sequence like list, tuple, string, or range.
+
+👉 Key Points:
+for loop ki direct condition undadu
+Loop sequence values meeda depend avutundi
+Enni times iterate avutundo mundey easy ga telustundi
+Iterations fixed & predictable
+
+👉 Syntax:
+for variable in sequence:
+    statement
+
+👉 Example:
+for i in range(1, 6):
+    print(i)
+
+👉 Explanation:
+
+Range(1,6) → values: 1,2,3,4,5
+Loop 5 times run avutundi
+Iterations easy ga predict cheyyachu
+
+🔵 WHILE LOOP
+👉 Definition:
+while loop is used to execute code while a condition is true.
+
+👉 Key Points:
+while loop ki condition compulsory
+Loop condition meeda depend avutundi
+Exact ga enni times iterate avutundo mundey teliyadu
+Increment / decrement compulsory
+Careful ga use cheyyali (infinite loop chance)
+
+👉 Syntax:
+while condition:
+    statement
+
+👉 Example:
+i = 1
+while i <= 5:
+    print(i)
+    i = i + 1
+
+👉 Dynamic Example:
+password = ""
+
+while password != "admin":
+    password = input("Enter password")
+
+
+👉 User input meeda depend
+👉 Loop enni times run avutundo predict cheyyalem
+
+🔥 FOR LOOP vs WHILE LOOP (Difference)
+
+FOR LOOP	                                          WHILE LOOP
+Condition undadu	                             Condition compulsory
+Sequence based	                                 Condition based
+Iterations known                             	Iterations unknown
+Predictable                                 	Not predictable
+Safe & easy	                                   Infinite loop risk
+
+🧠 Easy Remember Lines (Strong 💡)
+For loop → iterations count mundey telustundi
+While loop → iterations count mundey teliyadu
+For → fixed values
+While → dynamic condition
+
+✨ One-Line Definitions (Exam Ready)
+For loop: Used when number of iterations is known
+While loop: Used when number of iterations is unknown
+
 
 
  
