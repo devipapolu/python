@@ -156,3 +156,39 @@ Notebook Shortcut
 Built-in functions → Already available in Python
 No need to define, can use directly
 Examples: type(), len(), print(), input(), int(), str(), sum()
+
+🧾 Rules to Create Variables in Python
+When creating a variable in Python, you must follow these rules:
+
+1. Variable name must start with a letter or underscore (_)
+name = "Devi"   # ✅ valid
+_age = 22       # ✅ valid
+1age = 22       # ❌ invalid, cannot start with a number
+
+2. Variable name can contain letters, numbers, and underscores
+student1 = "Ravi"   # ✅ valid
+total_marks = 100   # ✅ valid
+total-marks = 100   # ❌ invalid, cannot use hyphen (-)
+
+3. Variable names are case-sensitive
+age = 22
+Age = 30
+print(age)  # 22
+print(Age)  # 30
+age and Age are different variables
+
+4. Variable names cannot be Python keywords
+Keywords are reserved words in Python like:
+if, for, while, class, def, return etc.
+
+class = "Devi"   # ❌ invalid
+
+5. Variable names cannot contain spaces
+student name = "Ravi"  # ❌ invalid
+student_name = "Ravi"  # ✅ valid
+
+6. Recommended Practice
+Use meaningful names
+Use lowercase letters with underscores for readability
+total_marks = 100
+student_name = "Devi"
